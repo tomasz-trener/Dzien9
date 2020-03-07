@@ -164,7 +164,7 @@
                                 <div class="table-responsive">
                                     <table class="table">
                                         <thead class=" text-primary">
-                                            <th>   
+                                            <th>      
                                             </th>
                                             <th>Kraj
                                             </th>
@@ -183,7 +183,7 @@
                                                 { %>
 
                                             <tr>
-                                                <td><%= ZawodnicyLista[i].Imie + " " + ZawodnicyLista[i].Nazwisko %>
+                                                <td  style="font-weight:<%= ZawodnicyLista[i].StylWyswietlania %>" ><%= ZawodnicyLista[i].Imie + " " + ZawodnicyLista[i].Nazwisko %>
                                                 </td>
                                                 <td><%= ZawodnicyLista[i].Kraj %>
                                                 </td>
