@@ -13,15 +13,32 @@ namespace P03ZadanieZawody
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ZawodnicyRepo zr = new ZawodnicyRepo();
+            if (!Page.IsPostBack)
+            {
+                ZawodnicyRepo zr = new ZawodnicyRepo();
 
-            Zawodnik[] zawodnicy =  zr.PodajWszystkichZawodnikow();
+                Zawodnik[] zawodnicy = zr.PodajWszystkichZawodnikow();
 
-            lbZawodnicy.DataSource = zawodnicy;
-            lbZawodnicy.DataValueField = "Id";
-            lbZawodnicy.DataTextField = "ImieNazwisko";
-            lbZawodnicy.DataBind();
+                lbZawodnicy.DataSource = zawodnicy;
+                lbZawodnicy.DataValueField = "Id";
+                lbZawodnicy.DataTextField = "ImieNazwisko";
+                lbZawodnicy.DataBind();
+            }
+          
 
+
+        }
+
+        protected void lbZawodnicy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int idZaznaczonegoZawodnika = Convert.ToInt32(lbZawodnicy.SelectedValue);
+            ZawodyRepo zr = new ZawodyRepo();
+            string[] zawody= zr.PodajZawody(idZaznaczonegoZawodnika);
+            lblZawody.Text = "";
+
+            for (int i = 0; i < zawody.Length; i++)
+                lblZawody.Text += zawody[i] + "<br>"; 
+ 
 
         }
     }

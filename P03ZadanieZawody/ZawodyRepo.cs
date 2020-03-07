@@ -19,7 +19,7 @@ namespace P03ZadanieZawody.Repo
 
             PolaczenieZBaza pzb = new PolaczenieZBaza(connectionString);
 
-            string sq = string.Format(@"select  zw.nazwa 
+            string sql = string.Format(@"select zw.nazwa 
                             from zawodnicy z left
                             join uczestnictwa u on
                             z.id_zawodnika = u.id_zawodnika
@@ -27,7 +27,13 @@ namespace P03ZadanieZawody.Repo
                             join zawody zw on zw.id_zawodow = u.id_zawodow
                              where z.id_zawodnika = {0}", id);
 
+            string[][] wynikZBazy = pzb.WykonajZapytanieSQL(sql);
 
+            string[] wynik = new string[wynikZBazy.Length];
+            for (int i = 0; i < wynikZBazy.Length; i++)
+                wynik[i] = wynikZBazy[i][0];
+
+            return wynik;
         }
 
       

@@ -9,7 +9,9 @@
 <body>
     <form id="form1" runat="server">
         
-        <asp:ListBox ID="lbZawodnicy" runat="server"></asp:ListBox>
+        <asp:ListBox ID="lbZawodnicy" AutoPostBack="true" OnSelectedIndexChanged="lbZawodnicy_SelectedIndexChanged" runat="server"></asp:ListBox>
+        <br />
+        <asp:Label ID="lblZawody" runat="server" Text="Label"></asp:Label>
 
     </form>
 </body>
