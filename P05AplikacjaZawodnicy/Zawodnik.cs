@@ -28,5 +28,7 @@ namespace P05AplikacjaZawodnicy.KlasyDomenowe
             }
 
         }
+
+        public string StylWyswietlania { get; set; }
     }
 }
