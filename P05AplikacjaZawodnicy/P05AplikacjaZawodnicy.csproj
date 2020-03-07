@@ -93,6 +93,7 @@
     <Content Include="assets\js\plugins\perfect-scrollbar.jquery.min.js" />
     <Content Include="Web.config" />
     <Content Include="Zawodnicy.aspx" />
+    <Content Include="ZawodnikUser.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DaneDostepowe.cs" />
@@ -108,6 +109,13 @@
     <Compile Include="ZawodnicyRepo.cs" />
     <Compile Include="Zawodnik.cs" />
     <Compile Include="ZawodnikFiltr.cs" />
+    <Compile Include="ZawodnikUser.aspx.cs">
+      <DependentUpon>ZawodnikUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ZawodnikUser.aspx.designer.cs">
+      <DependentUpon>ZawodnikUser.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\css\bootstrap.min.css.map" />
