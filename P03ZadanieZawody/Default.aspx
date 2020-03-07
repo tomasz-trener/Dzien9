@@ -11,7 +11,7 @@
         
         <asp:ListBox ID="lbZawodnicy" AutoPostBack="true" OnSelectedIndexChanged="lbZawodnicy_SelectedIndexChanged" runat="server"></asp:ListBox>
         <br />
-        <asp:Label ID="lblZawody" runat="server" Text="Label"></asp:Label>
+        <asp:Label ID="lblZawody" runat="server" ForeColor="Red" Text="Label"></asp:Label>
 
     </form>
 </body>

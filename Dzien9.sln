@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02ZadanieZawodnicy", "P02Z
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03ZadanieZawody", "P03ZadanieZawody\P03ZadanieZawody.csproj", "{C56F0AFF-90BF-45DA-9463-D2CE883B7301}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04DynamiczneGenerowanieHTML", "P04DynamiczneGenerowanieHTML\P04DynamiczneGenerowanieHTML.csproj", "{1B70D914-F330-4619-BE82-F1ACDF1C5727}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C56F0AFF-90BF-45DA-9463-D2CE883B7301}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C56F0AFF-90BF-45DA-9463-D2CE883B7301}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C56F0AFF-90BF-45DA-9463-D2CE883B7301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B70D914-F330-4619-BE82-F1ACDF1C5727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B70D914-F330-4619-BE82-F1ACDF1C5727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B70D914-F330-4619-BE82-F1ACDF1C5727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B70D914-F330-4619-BE82-F1ACDF1C5727}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
