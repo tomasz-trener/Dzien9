@@ -11,12 +11,13 @@ namespace P05AplikacjaZawodnicy
 {
     public partial class ZawodnikUser : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            ZawodnicyRepo zr = new ZawodnicyRepo();
-            Zawodnik[] zawodnicy =  zr.PodajWszystkichZawodnikow();
+            int id = Convert.ToInt32(Request["id"]);
 
-            Zawodnik z = zawodnicy[0];
+            ZawodnicyRepo zr = new ZawodnicyRepo();
+            Zawodnik z= zr.PodajZawodnikow(id);
 
             txtId.Text = z.Id.ToString();
             txtImie.Text = z.Imie;

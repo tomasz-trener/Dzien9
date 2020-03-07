@@ -183,7 +183,7 @@
                                                 { %>
 
                                             <tr>
-                                                <td  style="font-weight:<%= ZawodnicyLista[i].StylWyswietlania %>" ><%= ZawodnicyLista[i].Imie + " " + ZawodnicyLista[i].Nazwisko %>
+                                                <td  style="font-weight:<%= ZawodnicyLista[i].StylWyswietlania %>" ><a href="ZawodnikUser.aspx?id=<%= ZawodnicyLista[i].Id %>"> <%= ZawodnicyLista[i].Imie + " " + ZawodnicyLista[i].Nazwisko %></a>
                                                 </td>
                                                 <td><%= ZawodnicyLista[i].Kraj %>
                                                 </td>

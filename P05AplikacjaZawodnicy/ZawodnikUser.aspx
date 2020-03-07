@@ -170,7 +170,8 @@
                       <div class="form-group">
                         <label>ID</label>
                         <asp:TextBox ID="txtId" CssClass="form-control" disabled="" runat="server"></asp:TextBox>
-                        <%--<input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc.">--%>
+                      
+                          <%--<input type="text" class="form-control" disabled="" placeholder="Company" value="<%= Zawodnik.Imie %>">--%>
                       
                       </div>
                     </div>
