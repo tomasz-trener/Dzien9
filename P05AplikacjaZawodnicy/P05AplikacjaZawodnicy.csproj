@@ -44,6 +44,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="P06PolaczenieZBazaBiblioteka">
+      <HintPath>..\..\Dzien7\P06PolaczenieZBazaBiblioteka\bin\Debug\P06PolaczenieZBazaBiblioteka.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -92,7 +95,9 @@
     <Content Include="Zawodnicy.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DaneDostepowe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trener.cs" />
     <Compile Include="Zawodnicy.aspx.cs">
       <DependentUpon>Zawodnicy.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -100,6 +105,9 @@
     <Compile Include="Zawodnicy.aspx.designer.cs">
       <DependentUpon>Zawodnicy.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ZawodnicyRepo.cs" />
+    <Compile Include="Zawodnik.cs" />
+    <Compile Include="ZawodnikFiltr.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\css\bootstrap.min.css.map" />
