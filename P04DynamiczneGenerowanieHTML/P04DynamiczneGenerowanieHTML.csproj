@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="PrzykladKolory.aspx" />
+    <Content Include="PrzykladKolory2.aspx" />
     <Content Include="Web.config" />
     <Content Include="WyswietlanieDanychZSerwera.aspx" />
   </ItemGroup>
@@ -87,6 +88,13 @@
     </Compile>
     <Compile Include="PrzykladKolory.aspx.designer.cs">
       <DependentUpon>PrzykladKolory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrzykladKolory2.aspx.cs">
+      <DependentUpon>PrzykladKolory2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrzykladKolory2.aspx.designer.cs">
+      <DependentUpon>PrzykladKolory2.aspx</DependentUpon>
     </Compile>
     <Compile Include="WyswietlanieDanychZSerwera.aspx.cs">
       <DependentUpon>WyswietlanieDanychZSerwera.aspx</DependentUpon>

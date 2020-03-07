@@ -15,6 +15,8 @@ namespace P04DynamiczneGenerowanieHTML
             string s = "Ala ma kota";
 
             Wyrazy = s.Split(' ');
+
+            
         }
     }
 }
