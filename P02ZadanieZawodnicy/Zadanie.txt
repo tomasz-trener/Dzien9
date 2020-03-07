@@ -1,0 +1,9 @@
+﻿
+Stwórz przycisk i pole tekstowe, które pozwala na wpisanie id zawodnika. 
+po kliknięciu przycisku w kontrolce label, pojawia się imię i nazwisko danego zawodnika.
+
+Zaimportuj klasę ZawodnicyManager, z projektu z dnia 8  P01AplikacjaZawodnicy\Repo\ZawodnicyRepo.cs
+
+dodaj także klase Zawonik...
+i dodaj refrencję do biblioteki polaczenieZBaza
+
