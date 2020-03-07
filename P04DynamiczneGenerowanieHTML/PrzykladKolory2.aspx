@@ -14,10 +14,7 @@
             { %>
                <span style="color:<%= Wynik[i][1] %>" ><%= Wynik[i][0] %></span>
         <%  }
-
             %>
-
-
     </form>
 </body>
 </html>
