@@ -21,6 +21,8 @@ namespace P03ZadanieZawody
             lbZawodnicy.DataValueField = "Id";
             lbZawodnicy.DataTextField = "ImieNazwisko";
             lbZawodnicy.DataBind();
+
+
         }
     }
 }

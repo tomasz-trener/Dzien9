@@ -85,6 +85,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Trener.cs" />
+    <Compile Include="ZawodyRepo.cs" />
     <Compile Include="ZawodnicyRepo.cs" />
     <Compile Include="Zawodnik.cs" />
     <Compile Include="ZawodnikFiltr.cs" />
