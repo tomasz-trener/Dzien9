@@ -8,3 +8,4 @@ select z.imie,z.nazwisko, zw.nazwa
 from zawodnicy z left join uczestnictwa u on 
  z.id_zawodnika = u.id_zawodnika 
  left join zawody zw on zw.id_zawodow =u.id_zawodow 
+ ...
