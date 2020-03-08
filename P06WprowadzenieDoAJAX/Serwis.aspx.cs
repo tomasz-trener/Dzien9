@@ -11,9 +11,12 @@ namespace P06WprowadzenieDoAJAX
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string s = "ala ma kota";
+            int liczba1 = Convert.ToInt32(Request["liczba1Parametr"]);
+            int liczba2 = Convert.ToInt32(Request["liczba2Parametr"]);
 
-            Response.Write(s);
+            int wynik = liczba1 + liczba2;
+            
+            Response.Write(wynik);
         }
     }
 }
